@@ -10,14 +10,14 @@ def orders():
     print(f'***********************************\n** What would you like to order? **\n***********************************')
 
     order=[]
-    choice=input(' ')
+    choice=input(">")
 
     while choice != 'quit':
         if choice in menue:
             order.append(choice)
-            print(f'**{order.count(choice)}order of {choice} have been added to your meal **')
-            choice=input(' ')
+            print(f'** {order.count(choice)} order of {choice} have been added to your meal **')
+            choice=input(">")
         else:
             print('choose from the menue please?')
-            choice=input(' ')
+            choice=input(">")
 orders()
